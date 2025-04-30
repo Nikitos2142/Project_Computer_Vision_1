@@ -1,0 +1,9 @@
+Model Name,Final Validation Accuracy,Final Validation Loss
+without_regular,0.6727,4.2925
+L1_lambda_a,0.5697,2.7767
+L1_lambda_b,0.0424,12.304
+L2_lambda_a,0.7091,1.56
+L2_lambda_b,0.6,1.7464
+dropout_value_1,0.703,2.8027
+L2_lambda_a_dropout_value_2,0.5879,1.8342
+L2_lambda_b_dropout_value_2,0.5212,2.2114
