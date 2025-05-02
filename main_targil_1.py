@@ -25,30 +25,6 @@ DROPOUT_VALUE_2 = 0.5
 ################################################ PRE-PROCESSING #########################################
 processor = imageProcessing(IVRIT_ALPHABET)
 DICT_ALPHABET_IMAGES = processor.dictionary_letter_images(HDD_FOLDER)
-#DICT_ALPHABET_IMAGES = {}
-#CREATION OF DICITONNARY : KEY IS LETTER, VALUE IS LIST OF IMAGES FOR THAT LETTER
-#AND CONVERSION IMAGES INTO GREYSCALE
-# for i, item_letter in enumerate(IVRIT_ALPHABET):
-#     folder_path = os.path.join(HDD_FOLDER, str(i))
-#     item_letter_images = []
-#     if os.path.isdir(folder_path):
-#         for filename in os.listdir(folder_path):
-#             full_path = os.path.join(folder_path, filename)
-#             if os.path.isfile(full_path):
-#                 image = cv2.imread(full_path, cv2.IMREAD_GRAYSCALE)
-#                 if image is not None:
-#                     item_letter_images.append(image)
-#                 else:
-#                     print("Image is not found")
-#     else:
-#         print("Folder is not found)")
-#     DICT_ALPHABET_IMAGES[item_letter] = item_letter_images
-##CHECKING
-# total_number_images = 0
-# for key, value in DICT_ALPHABET_IMAGES.items():
-#     print(f'{key}: {len(value)} images')
-#     total_number_images += len(value)
-# print(f'Total number of images in HDD base: {total_number_images}')
 
 #ADDING THE PADDING TO IMAGES TO MAKE THEM SQUARED
 DICT_ALPHABET_IMAGES_SQUARES = {}
